@@ -1014,7 +1014,7 @@
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
-#define PROBING_MARGIN 20
+#define PROBING_MARGIN 25
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -1146,8 +1146,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 295
-#define Y_BED_SIZE 290
+#define X_BED_SIZE 280
+#define Y_BED_SIZE 280
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -5 
@@ -1155,7 +1155,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 400
+#define Z_MAX_POS 380
 
 /**
  * Software Endstops
@@ -1527,24 +1527,19 @@
 
 // Preheat Constants
 #define PREHEAT_1_LABEL       "petG"
-#define PREHEAT_1_TEMP_HOTEND 220 
-#define PREHEAT_1_TEMP_BED     45
-#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_1_TEMP_HOTEND 235 
+#define PREHEAT_1_TEMP_BED     70
+#define PREHEAT_1_FAN_SPEED    0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "Nylon"
 #define PREHEAT_2_TEMP_HOTEND 230
 #define PREHEAT_2_TEMP_BED    45
-#define PREHEAT_2_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_2_FAN_SPEED   0 // Value from 0 to 255
 
 #define PREHEAT_3_LABEL       "PLA"
-#define PREHEAT_3_TEMP_HOTEND 185
-#define PREHEAT_3_TEMP_BED     45
-#define PREHEAT_3_FAN_SPEED   255 // Value from 0 to 255
-
-#define PREHEAT_4_LABEL       "ABS"
-#define PREHEAT_4_TEMP_HOTEND 230
-#define PREHEAT_4_TEMP_BED    110
-#define PREHEAT_4_FAN_SPEED   255 // Value from 0 to 255
+#define PREHEAT_3_TEMP_HOTEND 205
+#define PREHEAT_3_TEMP_BED     55
+#define PREHEAT_3_FAN_SPEED    0 // Value from 0 to 255
 
 /**
  * Nozzle Park
